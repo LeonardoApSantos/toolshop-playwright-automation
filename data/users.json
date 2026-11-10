@@ -1,0 +1,19 @@
+{
+    "valid": {
+        "firstName": "Leonardo",
+        "lastName": "Santos",
+        "phone": "12345678910",
+        "dateOfBirth": "1990-01-01",
+        "email": "LeoTest@hotmail.com",
+        "street": "Test street 200",
+        "house_number": "1234",
+        "city": "São Paulo",
+        "state": "São Paulo",
+        "country": "Brazil",
+        "postal_code": "12345-678",
+        "password": "Leotest2026!"
+    },
+    "invalidRegistration":[
+        {"case": "com e-mail inválido", "overrides": {"email": "LeoTest.com"}}
+    ]
+}
