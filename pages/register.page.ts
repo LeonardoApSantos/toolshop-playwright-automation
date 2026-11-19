@@ -90,9 +90,9 @@ export class RegisterPage {
   }
 
   async fillForm(user: any){
-    await this.fillFirstName(user.firstName)
-    await this.fillLastName(user.lastName)
-    await this.fillDateBirth(user.dateOfBirth)
+    await this.fillFirstName(user.first_name)
+    await this.fillLastName(user.last_name)
+    await this.fillDateBirth(user.date_of_birth)
     await this.fillCountry(user.country)
     await this.fillPostalCode(user.postal_code)
     await this.fillHouseNumber(user.house_number)

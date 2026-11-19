@@ -31,5 +31,7 @@ Playwright + TypeScript, GitHub Actions
  - Login valído, inválido, campos vazios.
  - Cadastro valido, inválido, duplicado.
 
-## 8. Bugs
-- O campo password não possui "*" no seu placeholder para indicar que é um campo obrigatório.
+## 8. Bugs encontrados
+- Cadastro de usuário
+    - O campo password não possui "*" no seu placeholder para indicar que é um campo obrigatório.
+    - Todos o campos possuem "*" no seu placeholder, exceto a data de nascimento que possui no nome do campo.

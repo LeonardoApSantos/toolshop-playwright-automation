@@ -3,7 +3,6 @@ import dotenv from "dotenv";
 
 dotenv.config();
 
-let adminToken: string
 let headers: { Authorization: string }
 
 const API_URL = process.env.API_URL;
@@ -24,6 +23,21 @@ export async function getAdminToken(
     return body.access_token;
 }
 
+export async function createUser(
+    request: APIRequestContext, 
+    adminToken: string, 
+    user: any
+) {
+    headers = { Authorization: `Bearer ${adminToken}` };
+
+    const post = await request.post(`${API_URL}/users/register`, {
+        data: user, headers
+    })
+    if (!post.ok())
+        throw new Error(`Falha ao criar usuário: ${post.status()}`);
+
+}
+
 export async function deleteUserByEmail(
     request: APIRequestContext,
     adminToken: string,
@@ -41,7 +55,7 @@ export async function deleteUserByEmail(
 
 export async function getUserByEmail(request: APIRequestContext, adminToken: string, email: string) {
     headers = { Authorization: `Bearer ${adminToken}` };
-    
+
     const search = await request.get(`${API_URL}/users/search`, {
         params: { q: email }, headers
     })

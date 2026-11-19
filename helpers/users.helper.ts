@@ -1,10 +1,10 @@
 import data from '../data/users.json';
 
 export interface UserModel {
-    firstName: string;
-    lastName: string;
+    first_name: string;
+    last_name: string;
     phone: string;
-    dateOfBirth: string;
+    date_of_birth: string;
     email: string;
     street: string;
     house_number: string;
@@ -16,5 +16,5 @@ export interface UserModel {
 }
 
 export function buildUser(overrides: Partial<UserModel> = {}): UserModel {
-    return { ...data.valid, ...overrides };
+    return { ...data.validUser, ...overrides };
 }

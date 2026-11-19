@@ -1,0 +1,20 @@
+{
+    "products": [
+        {
+            "name": "Combination Pliers",
+            "price": 14.15
+        },
+        {
+            "name": "Pliers",
+            "price": 12.01
+        },
+        {
+            "name": "Bolt Cutters",
+            "price": 48.41
+        },
+        {
+            "name": "Long Nose Pliers",
+            "price": 14.24
+        }
+    ]
+}
