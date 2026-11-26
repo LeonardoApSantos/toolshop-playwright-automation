@@ -16,5 +16,31 @@
             "name": "Long Nose Pliers",
             "price": 14.24
         }
+    ],
+    "nonProducts":[
+        {
+            "name": "Apple"
+        }
+    ],
+    "searchs":[
+        {
+            "name": "Protection",
+            "quantityWithSameName": 2
+        }
+    ],
+    "filters":[
+        {
+            "category": ["Pliers"],
+            "name": ["Pliers", "Cutters"]
+        },
+        {
+            "category": ["Measures", "Chisels"],
+            "name": ["Tape", "Ruler", "Chisels"]
+        },
+        {
+            "category": ["Grinder"],
+            "name": []
+        }
     ]
+
 }
